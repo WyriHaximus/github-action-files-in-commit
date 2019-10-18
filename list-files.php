@@ -25,6 +25,7 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autolo
 const REPOSITORY = 'GITHUB_REPOSITORY';
 const TOKEN = 'GITHUB_TOKEN';
 const SHA = 'GITHUB_SHA';
+const HEAD = 'INPUT_HEADSHA';
 const BASE = 'INPUT_BASESHA';
 
 (function () {
@@ -45,8 +46,8 @@ const BASE = 'INPUT_BASESHA';
         $logger->debug('Looking up repository: ' . $repo);
         return $user->repository($repo);
     })->then(function (Repository $repository) use ($logger) {
-        if (getenv(BASE) !== false && strlen(getenv(BASE)) > 0) {
-            return $repository->compareCommits(getenv(SHA), getenv(BASE))->then(function (Repository\Compare $compare) {
+        if (getenv(BASE) !== false && strlen(getenv(BASE)) > 0 && getenv(HEAD) !== false && strlen(getenv(HEAD)) > 0) {
+            return $repository->compareCommits(getenv(BASE), getenv(HEAD))->then(function (Repository\Compare $compare) {
                 return $compare->files();
             });
         }

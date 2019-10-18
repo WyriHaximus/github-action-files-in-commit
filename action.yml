@@ -3,6 +3,13 @@ description: 'CSV list of files in the given commit'
 branding:
   icon: 'clock'
   color: 'orange'
+input:
+  baseSha:
+    description: 'Base SHA'
+    required: false
+  headSha:
+    description: 'Head SHA'
+    required: false
 outputs:
   files:
     description: 'Success or failure'
