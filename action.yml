@@ -1,8 +1,8 @@
 name: 'Files in commit(range)'
 description: 'CSV list of files in the given commit'
 branding:
-  icon: 'clock'
-  color: 'orange'
+  icon: 'list'
+  color: 'green'
 inputs:
   baseSha:
     description: 'Base SHA'
