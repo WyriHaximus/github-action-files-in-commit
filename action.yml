@@ -3,7 +3,7 @@ description: 'CSV list of files in the given commit'
 branding:
   icon: 'clock'
   color: 'orange'
-input:
+inputs:
   baseSha:
     description: 'Base SHA'
     required: false
@@ -12,8 +12,7 @@ input:
     required: false
 outputs:
   files:
-    description: 'Success or failure'
-    required: true
+    description: 'CSV list of files in the given commit or diff between both SHA's'
 runs:
   using: 'docker'
   image: 'Dockerfile'
