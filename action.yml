@@ -1,8 +1,8 @@
 name: 'Files in commit(range)'
 description: 'CSV list of files in the given commit'
 branding:
-  icon: 'clock'
-  color: 'orange'
+  icon: 'list'
+  color: 'green'
 inputs:
   baseSha:
     description: 'Base SHA'
@@ -12,7 +12,7 @@ inputs:
     required: false
 outputs:
   files:
-    description: 'CSV list of files in the given commit or diff between both SHA's'
+    description: 'CSV list of files in the given commit (range)'
 runs:
   using: 'docker'
   image: 'Dockerfile'
