@@ -35,15 +35,15 @@ jobs:
           key: ${{ hashFiles('**/composer.json') }}-${{ hashFiles('**/composer.lock') }}
       - name: Install Dependencies
         run: (test -f vendor && true ) || composer install --ansi --no-progress --no-interaction --prefer-dist -o
-#      - name: List Files in Commit
-#        uses: ./
-#        id: files
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#      - name: Show Files
-#        run: echo "${FILES}"
-#        env:
-#          FILES: ${{ steps.files.outputs.files }}
+      - name: List Files in Commit
+        uses: ./
+        id: files
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Show Files
+        run: echo "${FILES}"
+        env:
+          FILES: ${{ steps.files.outputs.files }}
   generate-ref:
     name: Generate Ref
     runs-on: ubuntu-latest
