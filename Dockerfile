@@ -1,1 +1,1 @@
-FROM wyrihaximusgithubactions/files-in-commit:master
+FROM wyrihaximusgithubactions/files-in-commit:v1.0.0
