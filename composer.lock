@@ -1099,25 +1099,25 @@
         },
         {
             "name": "bramus/monolog-colored-line-formatter",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bramus/monolog-colored-line-formatter.git",
-                "reference": "d2c3197b7ea0fffa83e2030ea834aec24662071c"
+                "reference": "0b0df515b770056ff7ca4ab789587197113d3a5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bramus/monolog-colored-line-formatter/zipball/d2c3197b7ea0fffa83e2030ea834aec24662071c",
-                "reference": "d2c3197b7ea0fffa83e2030ea834aec24662071c",
+                "url": "https://api.github.com/repos/bramus/monolog-colored-line-formatter/zipball/0b0df515b770056ff7ca4ab789587197113d3a5c",
+                "reference": "0b0df515b770056ff7ca4ab789587197113d3a5c",
                 "shasum": ""
             },
             "require": {
                 "bramus/ansi-php": "^3.0.3",
-                "php": "^7.2"
+                "php": "^7.2|~8.0.0"
             },
             "require-dev": {
                 "monolog/monolog": "~2.0",
-                "phpunit/phpunit": "~7.0"
+                "phpunit/phpunit": "~7.0|^9.4"
             },
             "type": "library",
             "autoload": {
@@ -1137,7 +1137,7 @@
                 }
             ],
             "description": "Colored Line Formatter for Monolog",
-            "time": "2019-12-09T10:51:42+00:00"
+            "time": "2020-11-28T23:44:05+00:00"
         },
         {
             "name": "clue/block-react",
@@ -1251,6 +1251,7 @@
                 "psr-7",
                 "reactphp"
             ],
+            "abandoned": "react/http",
             "time": "2019-04-03T13:58:40+00:00"
         },
         {
@@ -3146,6 +3147,7 @@
             "keywords": [
                 "http"
             ],
+            "abandoned": "react/http",
             "time": "2018-04-10T11:38:54+00:00"
         },
         {
