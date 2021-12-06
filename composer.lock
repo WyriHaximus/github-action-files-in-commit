@@ -1059,16 +1059,16 @@
         },
         {
             "name": "bramus/ansi-php",
-            "version": "3.0.3",
+            "version": "3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bramus/ansi-php.git",
-                "reference": "fb0be33f36053af7454d462e3ddc0a2ac0b2f311"
+                "reference": "f581b2fd322177e5fabd67af240811838c1c8fbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bramus/ansi-php/zipball/fb0be33f36053af7454d462e3ddc0a2ac0b2f311",
-                "reference": "fb0be33f36053af7454d462e3ddc0a2ac0b2f311",
+                "url": "https://api.github.com/repos/bramus/ansi-php/zipball/f581b2fd322177e5fabd67af240811838c1c8fbc",
+                "reference": "f581b2fd322177e5fabd67af240811838c1c8fbc",
                 "shasum": ""
             },
             "require": {
@@ -1095,29 +1095,29 @@
                 }
             ],
             "description": "ANSI Control Functions and ANSI Control Sequences (Colors, Erasing, etc.) for PHP CLI Apps",
-            "time": "2019-12-03T09:04:38+00:00"
+            "time": "2021-10-28T10:45:05+00:00"
         },
         {
             "name": "bramus/monolog-colored-line-formatter",
-            "version": "3.0.4",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bramus/monolog-colored-line-formatter.git",
-                "reference": "d2c3197b7ea0fffa83e2030ea834aec24662071c"
+                "reference": "708891d34cb431d9ed56da91a53ecc2d8afdc24e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bramus/monolog-colored-line-formatter/zipball/d2c3197b7ea0fffa83e2030ea834aec24662071c",
-                "reference": "d2c3197b7ea0fffa83e2030ea834aec24662071c",
+                "url": "https://api.github.com/repos/bramus/monolog-colored-line-formatter/zipball/708891d34cb431d9ed56da91a53ecc2d8afdc24e",
+                "reference": "708891d34cb431d9ed56da91a53ecc2d8afdc24e",
                 "shasum": ""
             },
             "require": {
                 "bramus/ansi-php": "^3.0.3",
-                "php": "^7.2"
+                "php": "^7.2|^8.0"
             },
             "require-dev": {
                 "monolog/monolog": "~2.0",
-                "phpunit/phpunit": "~7.0"
+                "phpunit/phpunit": "~7.0|^9.4"
             },
             "type": "library",
             "autoload": {
@@ -1137,7 +1137,7 @@
                 }
             ],
             "description": "Colored Line Formatter for Monolog",
-            "time": "2019-12-09T10:51:42+00:00"
+            "time": "2021-12-05T09:10:49+00:00"
         },
         {
             "name": "clue/block-react",
@@ -1251,6 +1251,7 @@
                 "psr-7",
                 "reactphp"
             ],
+            "abandoned": "react/http",
             "time": "2019-04-03T13:58:40+00:00"
         },
         {
@@ -3146,6 +3147,7 @@
             "keywords": [
                 "http"
             ],
+            "abandoned": "react/http",
             "time": "2018-04-10T11:38:54+00:00"
         },
         {
@@ -4140,12 +4142,12 @@
             "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "shasum": ""
             },
